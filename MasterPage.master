@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="DepressionFighter" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="~/Styles/StyleSheet.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <div id="wrapper">
+               <div id="banner">
+
+               </div>
+                
+                <div id="navigation">
+                    <ul id="nav">
+                        <li><a href="Home.aspx">Home</li>
+                        <li><a href="Depression.aspx">Depression
+                            <ul>
+                                <li><a href="AboutDepression.aspx">About Depression</li>
+                                <li><a href="Syndrome.aspx">Syndrome</li>
+                                <li><a href="Types.aspx">Types</li>
+                                <li><a href="Causes.aspx">Causes</li>
+                                <li><a href="DrugInformation.aspx">Drug information</li>
+
+                            </ul>
+                        </li>
+                        <li><a href="DepressionTest.aspx">DepressionTest
+                            <ul>
+                                <li><a href="Types.aspx">Test</li>
+                                <li><a href="ShowResult.aspx">Show Result</li>
+
+                            </ul>       
+                        </li>
+                        <li><a href="Refreshment.aspx">Refreshment
+                            <ul>
+                                <li><a href="Audio.aspx">Audio</li>
+                                <li><a href="Video.aspx">Video</li>
+                                <li><a href="Books.aspx">Books</li>
+
+                            </ul>            
+                        </li>
+                        <li><a href="Experts.aspx">Experts
+                            <ul>
+                                <li><a href="Psychologists'.aspx">Psychologists' Adress</li>
+                                <li><a href="Psychiatists'.aspx">Psychiatists' Address</li>
+                                <li><a href="ConsultingCenters.aspx">Consulting Centers</li>
+                            </ul>
+                         </li>
+                        <li><a href="CaseStudy.aspx">Case Study</a>
+
+                     </ul>
+
+                </div>
+
+
+               <div id="content_area" >
+               <asp:ContentPlaceHolder id="ContentBody" runat="server">
+               </asp:ContentPlaceHolder>
+               </div>
+               
+               <div id="footer">
+
+                   <p>All Rights Reservrd</p>
+
+               </div>
+
+    </div>
+    </form>
+</body>
+</html>
